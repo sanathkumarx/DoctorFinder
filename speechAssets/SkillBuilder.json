@@ -1,0 +1,2556 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "doctor finder",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help me",
+                        "what are your utterances",
+                        "what are your skills",
+                        "what do you know",
+                        "what can you do"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "turn off",
+                        "shut down",
+                        "shut alexa",
+                        "shut it alexa",
+                        "shut up alexa",
+                        "alexa shut it",
+                        "alexa shut up",
+                        "alexa stop talking",
+                        "alexa stop",
+                        "stop talking alexa",
+                        "please stop talking",
+                        "please stop",
+                        "stop talking",
+                        "stopp",
+                        "shut it",
+                        "shut up",
+                        "stop speaking"
+                    ]
+                },
+                {
+                    "name": "GetDoctors",
+                    "slots": [
+                        {
+                            "name": "part",
+                            "type": "doc",
+                            "samples": [
+                                "{part}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "to find me a close by {part}",
+                        "to find me a closeby {part}",
+                        "to find me a near by {part}",
+                        "to find me a nearby {part}",
+                        "to find me a {part} near me",
+                        "to find me an close by {part}",
+                        "to find me an closeby {part}",
+                        "to find me an near by {part}",
+                        "to find me an nearby {part}",
+                        "to find me an {part}",
+                        "to find me an {part} near me",
+                        "to please find me a close by {part}",
+                        "to please find me a closeby {part}",
+                        "to please find me a near by {part}",
+                        "to please find me a nearby {part}",
+                        "to please find me a {part}",
+                        "to please find me a {part} near me",
+                        "to please find me an close by {part}",
+                        "to please find me an closeby {part}",
+                        "to please find me an near by {part}",
+                        "to please find me an nearby {part}",
+                        "to please find me an {part}",
+                        "to please find me an {part} near me",
+                        "find me a close by {part}",
+                        "find me a closeby {part}",
+                        "find me a near by {part}",
+                        "find me a nearby {part}",
+                        "find me a {part}",
+                        "find me a {part} near me",
+                        "find me an close by {part}",
+                        "find me an closeby {part}",
+                        "find me an near by {part}",
+                        "find me an nearby {part}",
+                        "find me an {part}",
+                        "find me an {part} near me",
+                        "please find me a close by {part}",
+                        "please find me a closeby {part}",
+                        "please find me a near by {part}",
+                        "please find me a nearby {part}",
+                        "please find me a {part}",
+                        "please find me a {part} near me",
+                        "please find me an close by {part}",
+                        "please find me an closeby {part}",
+                        "please find me an near by {part}",
+                        "please find me an nearby {part}",
+                        "please find me an {part}",
+                        "please find me an {part} near me",
+                        "to find a close by {part}",
+                        "to find a closeby {part}",
+                        "to find a near by {part}",
+                        "to find a nearby {part}",
+                        "to find a {part}",
+                        "to find a {part} near me",
+                        "to find an close by {part}",
+                        "to find an closeby {part}",
+                        "to find an near by {part}",
+                        "to find an nearby {part}",
+                        "to find an {part}",
+                        "to find an {part} near me",
+                        "to please find a close by {part}",
+                        "to please find a closeby {part}",
+                        "to please find a near by {part}",
+                        "to please find a nearby {part}",
+                        "to please find a {part}",
+                        "to please find a {part} near me",
+                        "to please find an close by {part}",
+                        "to please find an closeby {part}",
+                        "to please find an near by {part}",
+                        "to please find an nearby {part}",
+                        "to please find an {part}",
+                        "to please find an {part} near me",
+                        "find a close by {part}",
+                        "find a closeby {part}",
+                        "find a near by {part}",
+                        "find a nearby {part}",
+                        "find a {part}",
+                        "find a {part} near me",
+                        "find an close by {part}",
+                        "find an closeby {part}",
+                        "find an near by {part}",
+                        "find an nearby {part}",
+                        "find an {part}",
+                        "find an {part} near me",
+                        "please find a close by {part}",
+                        "please find a closeby {part}",
+                        "please find a near by {part}",
+                        "please find a nearby {part}",
+                        "please find a {part}",
+                        "please find a {part} near me",
+                        "please find an close by {part}",
+                        "please find an closeby {part}",
+                        "please find an near by {part}",
+                        "please find an nearby {part}",
+                        "please find an {part}",
+                        "please find an {part} near me",
+                        "to get me a close by {part}",
+                        "to get me a closeby {part}",
+                        "to get me a near by {part}",
+                        "to get me a nearby {part}",
+                        "to get me a {part} near me",
+                        "to get me an close by {part}",
+                        "to get me an closeby {part}",
+                        "to get me an near by {part}",
+                        "to get me an nearby {part}",
+                        "to get me an {part}",
+                        "to get me an {part} near me",
+                        "to please get me a close by {part}",
+                        "to please get me a closeby {part}",
+                        "to please get me a near by {part}",
+                        "to please get me a nearby {part}",
+                        "to please get me a {part}",
+                        "to please get me a {part} near me",
+                        "to please get me an close by {part}",
+                        "to please get me an closeby {part}",
+                        "to please get me an near by {part}",
+                        "to please get me an nearby {part}",
+                        "to please get me an {part}",
+                        "to please get me an {part} near me",
+                        "get me a close by {part}",
+                        "get me a closeby {part}",
+                        "get me a near by {part}",
+                        "get me a nearby {part}",
+                        "get me a {part}",
+                        "get me a {part} near me",
+                        "get me an close by {part}",
+                        "get me an closeby {part}",
+                        "get me an near by {part}",
+                        "get me an nearby {part}",
+                        "get me an {part}",
+                        "get me an {part} near me",
+                        "please get me a close by {part}",
+                        "please get me a closeby {part}",
+                        "please get me a near by {part}",
+                        "please get me a nearby {part}",
+                        "please get me a {part}",
+                        "please get me a {part} near me",
+                        "please get me an close by {part}",
+                        "please get me an closeby {part}",
+                        "please get me an near by {part}",
+                        "please get me an nearby {part}",
+                        "please get me an {part}",
+                        "please get me an {part} near me",
+                        "to get a close by {part}",
+                        "to get a closeby {part}",
+                        "to get a near by {part}",
+                        "to get a nearby {part}",
+                        "to get a {part}",
+                        "to get a {part} near me",
+                        "to get an close by {part}",
+                        "to get an closeby {part}",
+                        "to get an near by {part}",
+                        "to get an nearby {part}",
+                        "to get an {part}",
+                        "to get an {part} near me",
+                        "to please get a close by {part}",
+                        "to please get a closeby {part}",
+                        "to please get a near by {part}",
+                        "to please get a nearby {part}",
+                        "to please get a {part}",
+                        "to please get a {part} near me",
+                        "to please get an close by {part}",
+                        "to please get an closeby {part}",
+                        "to please get an near by {part}",
+                        "to please get an nearby {part}",
+                        "to please get an {part}",
+                        "to please get an {part} near me",
+                        "get a close by {part}",
+                        "get a closeby {part}",
+                        "get a near by {part}",
+                        "get a nearby {part}",
+                        "get a {part}",
+                        "get a {part} near me",
+                        "get an close by {part}",
+                        "get an closeby {part}",
+                        "get an near by {part}",
+                        "get an nearby {part}",
+                        "get an {part}",
+                        "get an {part} near me",
+                        "please get a close by {part}",
+                        "please get a closeby {part}",
+                        "please get a near by {part}",
+                        "please get a nearby {part}",
+                        "please get a {part}",
+                        "please get a {part} near me",
+                        "please get an close by {part}",
+                        "please get an closeby {part}",
+                        "please get an near by {part}",
+                        "please get an nearby {part}",
+                        "please get an {part}",
+                        "please get an {part} near me",
+                        "to locate me a close by {part}",
+                        "to locate me a closeby {part}",
+                        "to locate me a near by {part}",
+                        "to locate me a nearby {part}",
+                        "to locate me a {part}",
+                        "to locate me a {part} near me",
+                        "to locate me an close by {part}",
+                        "to locate me an closeby {part}",
+                        "to locate me an near by {part}",
+                        "to locate me an nearby {part}",
+                        "to locate me an {part}",
+                        "to locate me an {part} near me",
+                        "to please locate me a close by {part}",
+                        "to please locate me a closeby {part}",
+                        "to please locate me a near by {part}",
+                        "to please locate me a nearby {part}",
+                        "to please locate me a {part}",
+                        "to please locate me a {part} near me",
+                        "to please locate me an close by {part}",
+                        "to please locate me an closeby {part}",
+                        "to please locate me an near by {part}",
+                        "to please locate me an nearby {part}",
+                        "to please locate me an {part}",
+                        "to please locate me an {part} near me",
+                        "locate me a close by {part}",
+                        "locate me a closeby {part}",
+                        "locate me a near by {part}",
+                        "locate me a nearby {part}",
+                        "locate me a {part}",
+                        "locate me a {part} near me",
+                        "locate me an close by {part}",
+                        "locate me an closeby {part}",
+                        "locate me an near by {part}",
+                        "locate me an nearby {part}",
+                        "locate me an {part}",
+                        "locate me an {part} near me",
+                        "please locate me a close by {part}",
+                        "please locate me a closeby {part}",
+                        "please locate me a near by {part}",
+                        "please locate me a nearby {part}",
+                        "please locate me a {part}",
+                        "please locate me a {part} near me",
+                        "please locate me an close by {part}",
+                        "please locate me an closeby {part}",
+                        "please locate me an near by {part}",
+                        "please locate me an nearby {part}",
+                        "please locate me an {part}",
+                        "please locate me an {part} near me",
+                        "please suggest me {part}",
+                        "to please suggest me {part}",
+                        "find me doctor",
+                        "find me {part}",
+                        "fine me {part} doctor",
+                        "get me doctor",
+                        "get me {part}",
+                        "please suggest me {part} doctor",
+                        "show me doctor",
+                        "show me {part}",
+                        "suggest me few doctors",
+                        "suggest me few {part} doctors near me",
+                        "suggest me {part}",
+                        "suggest me {part} doctor",
+                        "tell me doctor",
+                        "tell me {part}",
+                        "to find me doctor",
+                        "to find me {part}",
+                        "to find me {part} doctor",
+                        "to get me doctor",
+                        "to get me {part}",
+                        "to get me {part} doctor",
+                        "to please suggest me {part} doctor",
+                        "to show me doctor",
+                        "to show me {part}",
+                        "to show me {part} doctor",
+                        "to suggest me {part}",
+                        "to suggest me {part} doctor",
+                        "to tell me doctor",
+                        "to tell me {part}",
+                        "to tell me {part} doctor",
+                        "to suggest me doctor",
+                        "to suggest me doctor's",
+                        "to suggest me doctors",
+                        "to please suggest me doctor",
+                        "to please suggest me doctor's",
+                        "to please suggest me doctors",
+                        "to please suggest me {part} doctor near me",
+                        "to please suggest me {part} doctor's near me",
+                        "to please suggest me {part} doctors near me",
+                        "please suggest me doctor",
+                        "please suggest me doctor's",
+                        "please suggest me doctors",
+                        "please suggest me {part} doctor near me",
+                        "please suggest me {part} doctor's near me",
+                        "please suggest me {part} doctors near me",
+                        "suggest me doctor",
+                        "suggest me {part} doctor near me",
+                        "suggest me doctor's",
+                        "suggest me {part} doctor's near me",
+                        "suggest me doctors",
+                        "suggest me {part} doctors near me",
+                        "to suggest me few doctor",
+                        "to suggest me few doctor's",
+                        "to suggest me few doctors",
+                        "to suggest me few {part} doctor near me",
+                        "to suggest me few {part} doctor's near me",
+                        "to suggest me few {part} doctors near me",
+                        "to please suggest me few doctor",
+                        "to please suggest me few doctor's",
+                        "to please suggest me few doctors",
+                        "to please suggest me few {part} doctor near me",
+                        "to please suggest me few {part} doctor's near me",
+                        "to please suggest me few {part} doctors near me",
+                        "please suggest me few doctor",
+                        "please suggest me few doctor's",
+                        "please suggest me few doctors",
+                        "please suggest me few {part} doctor near me",
+                        "please suggest me few {part} doctor's near me",
+                        "please suggest me few {part} doctors near me",
+                        "suggest me few doctor",
+                        "suggest me few {part} doctor near me",
+                        "suggest me few doctor's",
+                        "suggest me few {part} doctor's near me",
+                        "suggest me few doctors",
+                        "suggest me few {part} doctors near me",
+                        "suggest me few doctor",
+                        "suggest me few doctor's",
+                        "suggest me few doctors",
+                        "suggest me few {part} doctor near me",
+                        "suggest me few {part} doctor's near me",
+                        "suggest me few {part} doctors near me",
+                        "to suggest doctor near me",
+                        "to suggest doctor's near me",
+                        "to suggest doctors near me",
+                        "to suggest me a few doctor",
+                        "to suggest me a few doctor's",
+                        "to suggest me a few doctors",
+                        "to suggest me a few {part} doctor near me",
+                        "to suggest me a few {part} doctor's near me",
+                        "to suggest me a few {part} doctors near me",
+                        "to suggest me a {part}",
+                        "to suggest me a {part} doctor",
+                        "to suggest me an few doctor",
+                        "to suggest me an few doctor's",
+                        "to suggest me an few doctors",
+                        "to suggest me an few {part} doctor near me",
+                        "to suggest me an few {part} doctor's near me",
+                        "to suggest me an few {part} doctors near me",
+                        "to suggest me an {part}",
+                        "to suggest me an {part} doctor",
+                        "to suggest me {part} doctor near me",
+                        "to suggest me {part} doctor's near me",
+                        "to suggest me {part} doctors near me",
+                        "to please suggest doctor near me",
+                        "to please suggest doctor's near me",
+                        "to please suggest doctors near me",
+                        "to please suggest me a few doctor",
+                        "to please suggest me a few doctor's",
+                        "to please suggest me a few doctors",
+                        "to please suggest me a few {part} doctor near me",
+                        "to please suggest me a few {part} doctor's near me",
+                        "to please suggest me a few {part} doctors near me",
+                        "to please suggest me a {part}",
+                        "to please suggest me a {part} doctor",
+                        "to please suggest me an few doctor",
+                        "to please suggest me an few doctor's",
+                        "to please suggest me an few doctors",
+                        "to please suggest me an few {part} doctor near me",
+                        "to please suggest me an few {part} doctor's near me",
+                        "to please suggest me an few {part} doctors near me",
+                        "to please suggest me an {part}",
+                        "to please suggest me an {part} doctor",
+                        "to please suggest me {part} doctor near me",
+                        "to please suggest me {part} doctor's near me",
+                        "to please suggest me {part} doctors near me",
+                        "please suggest doctor near me",
+                        "please suggest doctor's near me",
+                        "please suggest doctors near me",
+                        "please suggest me a few doctor",
+                        "please suggest me a few doctor's",
+                        "please suggest me a few doctors",
+                        "please suggest me a few {part} doctor near me",
+                        "please suggest me a few {part} doctor's near me",
+                        "please suggest me a few {part} doctors near me",
+                        "please suggest me a {part}",
+                        "please suggest me a {part} doctor",
+                        "please suggest me an few doctor",
+                        "please suggest me an few doctor's",
+                        "please suggest me an few doctors",
+                        "please suggest me an few {part} doctor near me",
+                        "please suggest me an few {part} doctor's near me",
+                        "please suggest me an few {part} doctors near me",
+                        "please suggest me an {part}",
+                        "please suggest me an {part} doctor",
+                        "please suggest me {part} doctor near me",
+                        "please suggest me {part} doctor's near me",
+                        "please suggest me {part} doctors near me",
+                        "to please suggest me a {part}",
+                        "to please suggest me an {part}",
+                        "to locate a close by {part}",
+                        "to locate a closeby {part}",
+                        "to locate a near by {part}",
+                        "to locate a nearby {part}",
+                        "to locate a {part}",
+                        "to locate a {part} near me",
+                        "to locate an close by {part}",
+                        "to locate an closeby {part}",
+                        "to locate an near by {part}",
+                        "to locate an nearby {part}",
+                        "to locate an {part}",
+                        "to locate an {part} near me",
+                        "to please locate a close by {part}",
+                        "to please locate a closeby {part}",
+                        "to please locate a near by {part}",
+                        "to please locate a nearby {part}",
+                        "to please locate a {part}",
+                        "to please locate a {part} near me",
+                        "to please locate an close by {part}",
+                        "to please locate an closeby {part}",
+                        "to please locate an near by {part}",
+                        "to please locate an nearby {part}",
+                        "to please locate an {part}",
+                        "to please locate an {part} near me",
+                        "where's the nearest {part} doctor",
+                        "doctor close to me",
+                        "suggest doctor near me",
+                        "suggest me a few doctor",
+                        "suggest me a few {part} doctor near me",
+                        "suggest me an few doctor",
+                        "suggest me an few {part} doctor near me",
+                        "suggest me {part} doctor near me",
+                        "tell me about {part} doctor near me",
+                        "tell me {part} doctor near me",
+                        "{part} doctor near me",
+                        "nearest doctor's",
+                        "nearest {part} doctor's",
+                        "where is the nearest doctor's",
+                        "where is the nearest {part} doctor's",
+                        "where's the nearest doctor's",
+                        "where's the nearest {part} doctor's",
+                        "doctor's close to me",
+                        "doctor's near me",
+                        "suggest doctor's near me",
+                        "suggest me a few doctor's",
+                        "suggest me a few {part} doctor's near me",
+                        "suggest me an few doctor's",
+                        "suggest me an few {part} doctor's near me",
+                        "suggest me {part} doctor's near me",
+                        "tell me about {part} doctor's near me",
+                        "tell me {part} doctor's near me",
+                        "{part} doctor's near me",
+                        "nearest doctor's to me",
+                        "nearest {part} doctor's to me",
+                        "find {part} doctor's near me",
+                        "get {part} doctor's near me",
+                        "search a {part} doctor's for me",
+                        "search an {part} doctor's for me",
+                        "show {part} doctor's near me",
+                        "tell {part} doctor's near me",
+                        "find {part} doctors near me",
+                        "get {part} doctors near me",
+                        "search a {part} doctors for me",
+                        "search an {part} doctors for me",
+                        "show {part} doctors near me",
+                        "tell {part} doctors near me",
+                        "nearest doctor",
+                        "nearest doctors",
+                        "nearest doctor to me",
+                        "nearest doctors to me",
+                        "nearest {part} doctor",
+                        "nearest {part} doctors to me",
+                        "nearest {part} doctor to me",
+                        "nearest {part} doctors",
+                        "where is the nearest doctor",
+                        "where is the nearest {part} doctor",
+                        "where's the nearest doctor",
+                        "where's the nearest {part} doctors",
+                        "where is the nearest doctors",
+                        "where is the nearest {part} doctors",
+                        "where's the nearest doctors",
+                        "where's the nearest {part} doctors",
+                        "doc close by me",
+                        "doc closeby me",
+                        "doc near by me",
+                        "doc near me",
+                        "doc nearby me",
+                        "doc's close by me",
+                        "doc's closeby me",
+                        "doc's near by me",
+                        "doc's near me",
+                        "doc's nearby me",
+                        "docs close by me",
+                        "docs closeby me",
+                        "docs near by me",
+                        "docs near me",
+                        "docs nearby me",
+                        "doctor's near me",
+                        "doctor's near me",
+                        "doctor's near me",
+                        "doctor's near me",
+                        "doctors close to me",
+                        "doctors near me",
+                        "find me a doctor",
+                        "find me a {part}",
+                        "find me an doctor",
+                        "find me an {part}",
+                        "find {part} doctor near me",
+                        "fine me a {part} doctor",
+                        "fine me an {part} doctor",
+                        "get me a doctor",
+                        "get me a {part}",
+                        "get me an doctor",
+                        "get me an {part}",
+                        "get {part} doctor near me",
+                        "hospital close by",
+                        "hospital close by me",
+                        "hospital closeby",
+                        "hospital closeby me",
+                        "hospital near by",
+                        "hospital near by me",
+                        "hospital near me",
+                        "hospital nearby",
+                        "hospital nearby me",
+                        "hospital's close by",
+                        "hospital's close by me",
+                        "hospital's closeby",
+                        "hospital's closeby me",
+                        "hospital's near by",
+                        "hospital's near by me",
+                        "hospital's near me",
+                        "hospital's nearby",
+                        "hospital's nearby me",
+                        "hospitals close by",
+                        "hospitals close by my",
+                        "hospitals closeby",
+                        "hospitals closeby my",
+                        "hospitals near by",
+                        "hospitals near by my",
+                        "hospitals near me",
+                        "hospitals nearby",
+                        "hospitals nearby my",
+                        "locate a close by {part}",
+                        "locate a closeby {part}",
+                        "locate a near by {part}",
+                        "locate a nearby {part}",
+                        "locate a {part}",
+                        "locate a {part} near me",
+                        "locate an close by {part}",
+                        "locate an closeby {part}",
+                        "locate an near by {part}",
+                        "locate an nearby {part}",
+                        "locate an {part}",
+                        "locate an {part} near me",
+                        "please locate a close by {part}",
+                        "please locate a closeby {part}",
+                        "please locate a near by {part}",
+                        "please locate a nearby {part}",
+                        "please locate a {part}",
+                        "please locate a {part} near me",
+                        "please locate an close by {part}",
+                        "please locate an closeby {part}",
+                        "please locate an near by {part}",
+                        "please locate an nearby {part}",
+                        "please locate an {part}",
+                        "please locate an {part} near me",
+                        "please suggest me a {part} doctor",
+                        "please suggest me an {part} doctor",
+                        "search a {part}",
+                        "search a {part} doctor",
+                        "search a {part} doctor for me",
+                        "search a {part} for me",
+                        "search an {part}",
+                        "search an {part} doctor",
+                        "search an {part} doctor for me",
+                        "search an {part} for me",
+                        "search for a {part}",
+                        "search for a {part} doctor",
+                        "search for an {part}",
+                        "search for an {part} doctor",
+                        "show me a doctor",
+                        "show me a {part}",
+                        "show me an doctor",
+                        "show me an {part}",
+                        "show {part} doctor near me",
+                        "suggest doctors near me",
+                        "suggest me a few doctors",
+                        "suggest me a few {part} doctors near me",
+                        "suggest me a {part}",
+                        "suggest me a {part} doctor",
+                        "suggest me an few doctors",
+                        "suggest me an few {part} doctors near me",
+                        "suggest me an {part}",
+                        "suggest me an {part} doctor",
+                        "suggest me {part} doctors near me",
+                        "tell me a doctor",
+                        "tell me a {part}",
+                        "tell me about {part} doctors near me",
+                        "tell me an doctor",
+                        "tell me an {part}",
+                        "tell me {part} doctors near me",
+                        "tell {part} doctor near me",
+                        "to find me a doctor",
+                        "to find me a {part}",
+                        "to find me a {part} doctor",
+                        "to find me an doctor",
+                        "to find me an {part}",
+                        "to find me an {part} doctor",
+                        "to get me a doctor",
+                        "to get me a {part}",
+                        "to get me a {part} doctor",
+                        "to get me an doctor",
+                        "to get me an {part}",
+                        "to get me an {part} doctor",
+                        "to please suggest me a {part} doctor",
+                        "to please suggest me an {part} doctor",
+                        "to show me a doctor",
+                        "to show me a {part}",
+                        "to show me a {part} doctor",
+                        "to show me an doctor",
+                        "to show me an {part}",
+                        "to show me an {part} doctor",
+                        "to suggest me a {part}",
+                        "to suggest me a {part} doctor",
+                        "to suggest me an {part}",
+                        "to suggest me an {part} doctor",
+                        "to tell me a doctor",
+                        "to tell me a {part}",
+                        "to tell me a {part} doctor",
+                        "to tell me an doctor",
+                        "to tell me an {part}",
+                        "to tell me an {part} doctor",
+                        "{part}",
+                        "{part} close by",
+                        "{part} close by me",
+                        "{part} closeby",
+                        "{part} closeby me",
+                        "{part} doctors near me",
+                        "{part} near by",
+                        "{part} near by me",
+                        "{part} near me",
+                        "{part} nearby",
+                        "{part} nearby me",
+                        "{part} s close by",
+                        "{part} s close by me",
+                        "{part} s closeby",
+                        "{part} s closeby me",
+                        "{part} s near by",
+                        "{part} s near by me",
+                        "{part} s near me",
+                        "{part} s nearby",
+                        "{part} s nearby me"
+                    ]
+                },
+                {
+                    "name": "getMoreInfoIntent",
+                    "slots": [
+                        {
+                            "name": "position",
+                            "type": "POSITION"
+                        }
+                    ],
+                    "samples": [
+                        "{position}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "doc",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "shin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wrist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "throat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "voice"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vocal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mouth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "saliva"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gland"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lips"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "skull"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jaw"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "teeth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tongue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Psychiatry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mood disorders"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Psychosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Substance use disorders"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Suicide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Overdose"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Delirium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dementia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Encephalopathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Meningitis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Encephalitis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Myopathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Neoplasm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Malignancies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Paraplegia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Quadriplegia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Peripheral neuropathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Seizure disorders"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Stroke"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Organ transplantations"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sarcoidosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "infectious arthropathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Anaphylaxis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Autoimmune disorders"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Drug reactions"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Inflammatory"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fungal infections"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hospital-acquired infections"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Infection in immunocompromised host"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sepsis syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Skin and soft-tissue infections"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Travel-related illnesses"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Viral infections"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Anemias"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bone marrow disorders"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Coagulopathies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hematologic malignancies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hematologic/oncologic emergencies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Neutropenic fever"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Solid organ tumors"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nephrolithiasis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Urinary tract infections"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Syndrome of inappropriate antidiuretic hormone secretion"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Diabetes insipidus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Electrolyte disorders"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chronic kidney disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Acute kidney injury"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Acid-base disorders"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Neoplasms"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "parathyroid gland disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Diabetic ketoacidosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hyperosmolar nonketotic coma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hypoglycemia",
+                                "synonyms": [
+                                    "hyperglycemia"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Adrenal gland disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Diabetes mellitus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gallbladder disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Liver disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pancreatitis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Constipation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Diverticulosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Inflammatory bowel disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Infections"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ischemia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Obstruction"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bleeding"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gastroparesis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "respiratory failure",
+                                "synonyms": [
+                                    "chronic respiratory failure",
+                                    "acute respiratory failure"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Assisted ventilation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Asthma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chronic obstructive pulmonary disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Interstitial lung disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Neoplasms/Malignancies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pleural disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pneumothorax"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pulmonary embolism"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tuberculosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ischemic disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Peripheral vascular disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shock"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Syncope"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Valvular disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Endocarditis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Myocarditis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pericardial disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cardiology"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Arrhythmias"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Deep venous thrombosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Heart failure"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hypertension"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lymphoma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Leukemia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lung cancer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Colon cancer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Melanoma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Basal cell cancer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Prostate cancer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Breast cancer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "leucocytes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "haemoglobin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vitamin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "height"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "strength"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "muscle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "joint"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blood"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "toe"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "feet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "foot"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hand"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "finger"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ear"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nose"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UTI specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UTI doctot"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UIT"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "influenza specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Thyroid specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HIV specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mononucleosis specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Influenza doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Thyroid doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HIV doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mononucleosis doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Influenza"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Anxiety"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Thyroid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HIV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mononucleosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Typhus specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Respiratory virus specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Typhus doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Respiratory virus doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Typhus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Respiratory virus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ALS specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ALS doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ALS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Asperger’s syndrome specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Asperger’s syndrome doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Asperger’s syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ebola specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ebola doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ebola"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lactose intolerance specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lactose intolerance doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lactose intolerance"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Heat Stroke specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Heat Stroke doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Heat Stroke"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H. Pylori infection specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H. Pylori infection doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H. Pylori infection"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Anxiety Attack specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Anxiety Attack doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Anxiety Attack"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gastritis specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gastritis doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gastritis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sinus Infection specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sinus Infection doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sinus Infection"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Listeria specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Listeria doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Listeria"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Measles specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Measles doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Measles"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gallbladder infection specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gallbladder infection doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gallbladder infection"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Flu specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Flu doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Flu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pregnancy specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pregnancy doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pregnancy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bronchitis specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bronchitis doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bronchitis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Diverticulitis specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Diverticulitis doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Diverticulitis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Strep throat specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Strep throat doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Strep throat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Endometriosis specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Endometriosis doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Endometriosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chlamydia specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chlamydia doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chlamydia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Scabies specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Scabies doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Scabies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fibromyalgia specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fibromyalgia doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fibromyalgia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pneumonia specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pneumonia doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pneumonia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Herpes specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Herpes doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Herpes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HPV specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HPV doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HPV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lyme disease specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lyme disease doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lyme disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Schizophrenia specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Schizophrenia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Schizophrenia doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Psoriasis specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Psoriasis doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Psoriasis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shingles specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shingles doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shingles"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lupus specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lupus doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lupus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yeast infection specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yeast infection doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yeast infection"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hemorrhoid specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hemorrhoid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hemorrhoid doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Diabetes specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Depression specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Anxiety specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Anxiety doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Anxiety "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Depression doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Depression "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Diabetes doctor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Diabetes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "zika specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "zika"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aids specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aids"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cancer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cancer specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "teeth specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mouth specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "skin specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "breain specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "liver specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bone specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lung specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "heart specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eye specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dental"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Otolaryngologis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cardiothoracic surgeon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Endocrinilogist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Veterinarian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Orthopaedic surgeon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ENT"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Physician Executive"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pulmonologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Otolaryngologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ophthalmologist "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nephrologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Urologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Surgeon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rheumatologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Radiologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Psychiatrist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Podiatrist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Plastic Surgeon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Physiologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pediatrician"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ENT Specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Orthopedic Surgeon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Oncologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Obstetrician"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Neurosurgeon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Neurologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Neonatologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Microbiologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Medical Geneticist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Internal Medicine Specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Infectious Disease Specialist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Immunologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gynecologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Audiologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Allergist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Anesthesiologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dentist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dermatologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Endocrinologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Epidemiologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Urologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "General Surgeons"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sleep Medicine Specialists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rheumatologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Radiologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pulmonologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Psychiatrists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Preventive Medicine Specialists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Podiatrists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Plastic Surgeons"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Physiatrists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pediatricians"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pathologists "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Otolaryngologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Osteopaths "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ophthalmologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Oncologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gynecologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Obstetricians"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Neurologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nephrologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Medical Geneticists "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Internists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Infectious Disease Specialists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hematologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Emergency Medicine Specialists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Geriatric Medicine Specialists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gastroenterologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Family Physicians"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Endocrinologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dermatologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cardiologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Anesthesiologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Allergists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Immunologists"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cardiologist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "leg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eye"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lung"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "liver"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hair"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "heart"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "skin"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "POSITION",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "third"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "second"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "first"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "three"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "two"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "one"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "GetDoctors",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "part",
+                            "type": "doc",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.737777416581.1507769515792"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.737777416581.1507769515792",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please tell which part"
+                    }
+                ]
+            }
+        ]
+    }
+}
